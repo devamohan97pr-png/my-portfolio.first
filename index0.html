@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>its boot strap</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+    
+ 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Portfolio .</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About me</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#domi">Skills</a>
+        </li>
+        <li class="nav-item dropdown">
+             <a class="nav-link" href="#mid">Contact</a>
+        </li>
+      
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  </nav>
+
+  
+  <div class="container">
+    <img src="./img.mne.jpg" alt="Profile Picture" class="profile-pic">
+    <h3>I'm <span id="typing"></span></h3>
+    <p>Let Me Start With You.</p>
+
+   
+
+    <div class="social-icons mt-4">
+      <a href="https://www.instagram.com/_.dev_a__?igsh=cGxobjV0MmVndGx5"><i class="fab fa-instagram" style="color: rgb(133, 20, 133);"></i></a>
+       <a href="https://www.linkedin.com/in/devamohan203l?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin" style= "color: rgb(24, 27, 28);"></i></a>
+       <a><i class="fab fa-whatsapp" style="color: rgb(58, 97, 18);"></i></a>
+      <a> <i class="fab fa-github"></i></a>
+        <a href=""> <i class="fas fa-envelope"></i></a>
+    </div>
+
+    
+  </div>
+  <section class="about-section1">
+    <h1 style="margin-top: 10%;"><a id="about">About Me</a></h1>
+    <h4 style="color: rgb(37, 4, 228);">Web Developer</h4>
+    <p style="color:rgb(53, 30, 30);">
+        Hey! I’m Deva Mohan, an aspiring MERN stack developer who loves building clean, creative, and interactive websites. I’ve finished my Plus Two and I’m getting ready to start my BCA journey to take my web development skills to the next level. I’m always excited to learn, code, and create something new!
+    </p>
+      
+    <div class="about-img">
+      <img src="./org-pc.jpg" alt="Your Photo" class="mine-pic" style="border-radius: 10px;">
+    </div>
+  </section>
+  <section>
+    <section class="skills">
+      <h1 id="domi">Skills</h1>
+    <div class="skill-box">
+      
+      <p style="color: white;">HTML</p>
+      <p style="color: azure;">Defines the structure and content: headings, paragraphs, images, links, forms, etc.</p>
+
+    
+      
+      
+      <button>Read more</button>
+
+
+    </div>
+    
+     <div class="skill-box">
+      
+      <p style="color: white;">CSS </p>
+     <p style="color: azure;"> Controls the visual design of HTML elements.
+ Manages layout, colors, fonts, spacing, and responsiveness across devices.</p>
+
+      <button>Read more</button>
+
+
+    </div>
+     <div class="skill-box">
+     
+      <p style="color: rgb(238, 230, 230);">JAVA SCRIPT</p>
+     <p style="color: azure;">Handles user actions, updates content in real-time, and powers animations, forms, and logic.</p>
+
+      <button>Read more</button>
+
+
+    </div>
+ </section>
+ <div class="main2">
+ <section class="contact-section">
+  <h2 class="section-title"><a id="mid">Find Me </a></h2>
+
+    <div class="contact-info">
+      
+      <p> Mob.no: +91 9061792752</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send </button>
+    </form>
+  </section>
+  </div>
+  
+
+ 
+  
+  
+
+  
+   <script>
+    const texts = [" Deva Mohan", "a Designer", "a Mern stack Developer"," a Learner"];
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+
+    (function type() {
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      document.getElementById('typing').textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1000);
+      } else {
+        setTimeout(type, 150);
+      }
+    })();
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

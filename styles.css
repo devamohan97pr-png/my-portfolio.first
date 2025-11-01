@@ -1,0 +1,216 @@
+
+
+
+body {
+      background-color: rgb(60, 132, 145);
+      color: #800d0d;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+    }
+  .navbar{
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+    }
+    
+    nav {
+      background: none;
+      padding: 1rem 2rem;
+       
+    }
+    
+  
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #0097a7 !important;
+    }
+
+    
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 50px;
+      animation: glow 2s ease-in-out infinite , bounce 5s ease infinite ;
+      box-shadow:0 0 35px #fe04c4;
+      
+    }
+
+    h3 span {
+      color: #a70000;
+      border-right: 3px solid #0097a7;
+      padding-right: 5px;
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes glow {
+      0%,100%{ box-shadow: 0 0 50px #fa01c0; }
+      50%{box-shadow: 0 0 55px #00ff2f;}
+
+    }
+    @keyframes bounce{
+        from {transform:rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+
+    .btn-primary {
+      background-color: #6c63ff;
+      border: none;
+    }
+
+    .social-icons i {
+      font-size: 20px;
+      color: #000;
+      margin: 0 10px;
+      padding: 1px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      transition: 0.3s;
+    }
+
+    .social-icons i:hover {
+      background-color: #00a767;
+      color: #fff;
+    }
+
+    .scroll-btn {
+      border: 1px solid #ddd;
+      padding: 8px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 40px;
+    }
+    .about-section1{
+      background-color: #b1c1c2;
+    }
+    .about-section h1{
+        margin-top: 20%;
+    }
+    .mine-pic {
+      width: 25%;
+      height: 25%;
+      border-radius: 0%;
+      
+      margin-top: 50px;
+      animation: blurIn 2s infinite;
+    }
+    @keyframes blurIn{
+        from{opacity:0;transform: translateY(10px);}
+        to{opacity: 1;transform: translateY(0);}
+    }
+    .skills{
+      width: 70%;
+      max-width: 600px;
+      margin-top: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+     
+      
+
+    
+    
+    .skill-box{
+      background-color: #131719;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+    }
+    .skill-box:hover{
+      transform: translateY(-5px);
+      box-shadow: #0078a7;
+    }
+    button{
+      background-color: #58a56f;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      
+    }
+    button:hover{
+      background-color: #6895ac;
+      transform: scale(1.05);
+    }
+    .main2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+    }
+    .contact-section{
+      background: #ffff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0,0, 0.1);
+      text-align: center;
+    }
+    .section-title {
+  color: #222;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 0.95em;
+  margin: 8px 0;
+}
+
+.contact-info a {
+  color: #009dff;
+  text-decoration: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95em;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00cfff;
+}
+
+button {
+  background-color: #00cfff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00aee0;
+  transform: scale(1.05);
+}
+ 
